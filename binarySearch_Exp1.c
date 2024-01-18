@@ -29,7 +29,7 @@ int main()
     printf("Enter the number of elements : ");
     scanf("%d",&n);
     
-    int *ptr = (int*)malloc(n * sizeof(int));
+    int *ptr = (int*)calloc(n , sizeof(int));
     printf("Enter the elements in the array : \n");
     for(int i = 0 ; i < n ; i++ ) {
         scanf("%d",ptr+i);
@@ -41,6 +41,8 @@ int main()
     
     int index = binarySearch(ptr,key,0,n-1);
     printf("Key value at index %d",index);
+
+    free(ptr);
 
     return 0;
 }
