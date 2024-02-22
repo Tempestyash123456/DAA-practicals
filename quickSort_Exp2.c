@@ -29,9 +29,9 @@ void quickSort(int array[], int low, int high) {
     }
 }
 
-void printArray(int array[], int size) {
+void printArray(int myArray[], int size) {
     for (int i = 0; i < size; i++)
-        printf("%d ", array[i]);
+        printf("%d ", myArray[i]);
     printf("\n");
 }
 
